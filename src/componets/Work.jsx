@@ -1,159 +1,161 @@
 import React from 'react'
+import BlackSlide from '../utils/blackSlide';
 import Header from './Header';
 
 const WorkPage = () => {
     return (
-        <div className='box'>
+        <div id='w_body' className='box'>
+            <BlackSlide></BlackSlide>
             <Header />
             <main>
-                <div class="main-box">
-                    <div class="inner">
-                        <div class="header-title">
+                <div className="main-box">
+                    <div className="inner">
+                        <div className="header-title">
                             <h1>Works..</h1>
                             <p>制作物</p>
                         </div>
 
-                        <div class="work-box">
-                            <div class="title">
+                        <div className="work-box">
+                            <div className="title">
                                 <h3>|| Webサイト</h3>
                                 <p>使用言語（HTML,CSS,JQuery</p>
                             </div>
-                            <ul class="line delayScroll">
-                                <li class=" work-item">
-                                    <a id="demo01" class="first-line-item1" href="#animatedModal1" target="_blank">
+                            <ul className="line delayScroll">
+                                <li className=" work-item">
+                                    <a id="demo01" className="first-line-item1" href="#animatedModal1" target="_blank">
                                         <img loading="lazy" src="images/scshot-kita.png" alt="thumbnail of site"></img>
-                                        <span class="work-item-sentence">
+                                        <span className="work-item-sentence">
                                             |　　北関東学院　　|
                                         </span>
                                     </a>
                                 </li>
-                                <li class=" work-item">
-                                    <a id="demo02" href="#animatedModal2" target="_blank" class="first-line-item2">
+                                <li className=" work-item">
+                                    <a id="demo02" href="#animatedModal2" target="_blank" className="first-line-item2">
                                         <img loading="lazy" src="./images/scshot-cat2.png" alt="thumbnail of site"></img>
-                                        <span class="work-item-sentence">
+                                        <span className="work-item-sentence">
                                             |猫カフェ～ごろごろ～|
                                         </span>
                                     </a>
                                 </li>
                             </ul>
-                            <ul class="line delayScroll">
-                                <li class=" work-item">
-                                    <a id="demo03" href="#animatedModal3" target="_blank" class="second-line-item1">
+                            <ul className="line delayScroll">
+                                <li className=" work-item">
+                                    <a id="demo03" href="#animatedModal3" target="_blank" className="second-line-item1">
                                         <img loading="lazy" src="./images/diz-screenshot.png" alt="thumbnail of site"></img>
-                                        <span class="work-item-sentence">
+                                        <span className="work-item-sentence">
                                             |　株式会社 Diz　|
                                         </span>
                                     </a>
                                 </li>
-                                <li class=" work-item">
-                                    <a id="demo04" href="#animatedModal4" target="_blank" class="second-line-item2">
+                                <li className=" work-item">
+                                    <a id="demo04" href="#animatedModal4" target="_blank" className="second-line-item2">
                                         <img loading="lazy" src="./images/sizingHunter.png" alt="thumbnail of site"></img>
-                                        <span class="work-item-sentence">
+                                        <span className="work-item-sentence">
                                             |　　Hunter.　　|
                                         </span>
                                     </a>
                                 </li>
                             </ul>
 
-                            <ul class="line delayScroll">
-                                <li class=" work-item">
-                                    <a id="demo09" href="#animatedModal9" target="_blank" class="thurd-line-item1">
+                            <ul className="line delayScroll">
+                                <li className=" work-item">
+                                    <a id="demo09" href="#animatedModal9" target="_blank" className="thurd-line-item1">
                                         <img loading="lazy" src="./images/Csalon.top.png" alt="thumbnail of site"></img>
-                                        <span class="work-item-sentence">
+                                        <span className="work-item-sentence">
                                             |　north C east　|
                                         </span>
                                     </a>
                                 </li>
-                                <li class=" work-item">
-                                    <a id="demo06" href="#animatedModal6" target="_blank" class="thurd-line-item2">
+                                <li className=" work-item">
+                                    <a id="demo06" href="#animatedModal6" target="_blank" className="thurd-line-item2">
                                         <img loading="lazy" src="./images/kitasalon.top.png" alt=""></img>
-                                        <span class="work-item-sentence">
+                                        <span className="work-item-sentence">
                                             |　NORTH C EAST　|
                                         </span>
                                     </a>
                                 </li>
                             </ul>
 
-                            <ul class="line delayScroll">
-                                <li class=" work-item">
-                                    <a id="demo07" href="#animatedModal7" target="_blank" class="thurd-line-item1">
+                            <ul className="line delayScroll">
+                                <li className=" work-item">
+                                    <a id="demo07" href="#animatedModal7" target="_blank" className="thurd-line-item1">
                                         <img loading="lazy" src="./images/kitakanndou.top.png" alt="thumbnail of site"></img>
-                                        <span class="work-item-sentence">
+                                        <span className="work-item-sentence">
                                             |　　北関堂　　|
                                         </span>
                                     </a>
                                 </li>
-                                <li class=" work-item">
-                                    <a id="demo08" href="#animatedModal8" target="_blank" class="thurd-line-item1">
+                                <li className=" work-item">
+                                    <a id="demo08" href="#animatedModal8" target="_blank" className="thurd-line-item1">
                                         <img loading="lazy" src="./images/shrine.top.png" alt=""></img>
-                                        <span class="work-item-sentence">
+                                        <span className="work-item-sentence">
                                             |　　北関神社　　|
                                         </span>
                                     </a>
                                 </li>
                             </ul>
-                            <div class="title">
+                            <div className="title">
                                 <h3>|| Webアプリケーション</h3>
                                 <p>使用言語（JavaScript-Ajax/React</p>
                             </div>
-                            <ul class="line delayScroll">
-                                <li class=" work-item">
-                                    <a id="demo05" href="#animatedModal5" target="_blank" class="thurd-line-item1">
+                            <ul className="line delayScroll">
+                                <li className=" work-item">
+                                    <a id="demo05" href="#animatedModal5" target="_blank" className="thurd-line-item1">
                                         <img loading="lazy" src="./images/resize-todo.png" alt="thumbnail of site"></img>
-                                        <span class="work-item-sentence">
+                                        <span className="work-item-sentence">
                                             |　　Todo List　　|
                                         </span>
                                     </a>
                                 </li>
-                                <li class=" work-item">
-                                    <a id="demo10" href="#animatedModal10" target="_blank" class="thurd-line-item1">
+                                <li className=" work-item">
+                                    <a id="demo10" href="#animatedModal10" target="_blank" className="thurd-line-item1">
                                         <img loading="lazy" src="./images/weathr-sc.png" alt=""></img>
-                                        <span class="work-item-sentence">
+                                        <span className="work-item-sentence">
                                             |Weather Sapporo|
                                         </span>
                                     </a>
                                 </li>
                             </ul>
 
-                            <ul class="line delayScroll">
-                                <li class=" work-item">
-                                    <a id="demo12" href="#animatedModal12" target="_blank" class="thurd-line-item1">
+                            <ul className="line delayScroll">
+                                <li className=" work-item">
+                                    <a id="demo12" href="#animatedModal12" target="_blank" className="thurd-line-item1">
                                         <img loading="lazy"
                                             src="./images/screencapture-ojagao-github-io-vanillaTodo-2023-01-07-13_47_12.png"
                                             alt=""></img>
-                                        <span class="work-item-sentence">
+                                        <span className="work-item-sentence">
                                             | Vanilla Todo |
                                         </span>
                                     </a>
                                 </li>
-                                <li class=" work-item">
-                                    <a id="demo13" href="#animatedModal13" target="_blank" class="thurd-line-item1">
+                                <li className=" work-item">
+                                    <a id="demo13" href="#animatedModal13" target="_blank" className="thurd-line-item1">
                                         <img loading="lazy"
                                             src="./images/screencapture-ojagao-github-io-chatbot-2023-01-12-15_06_52.png"
                                             alt=""></img>
-                                        <span class="work-item-sentence">
+                                        <span className="work-item-sentence">
                                             |chat BOT|
                                         </span>
                                     </a>
                                 </li>
                             </ul>
-                            <div class="title">
+                            <div className="title">
                                 <h3>|| Wordpress</h3>
                                 <p>使用言語（PHP</p>
                             </div>
-                            <ul class="line delayScroll">
-                                <li class=" work-item">
-                                    <a id="demo11" href="#animatedModal11" target="_blank" class="thurd-line-item1">
+                            <ul className="line delayScroll">
+                                <li className=" work-item">
+                                    <a id="demo11" href="#animatedModal11" target="_blank" className="thurd-line-item1">
                                         <img loading="lazy" src="./images/diz-screenshot.png" alt="thumbnail of site"></img>
-                                        <span class="work-item-sentence">
+                                        <span className="work-item-sentence">
                                             | Wordpress化した株式会社Diz |
                                         </span>
                                     </a>
                                 </li>
-                                <li class=" work-item">
-                                    <a id="demo14" href="#animatedModal14" target="_blank" class="thurd-line-item1">
+                                <li className=" work-item">
+                                    <a id="demo14" href="#animatedModal14" target="_blank" className="thurd-line-item1">
                                         <img loading="lazy" src="" alt=""></img>
-                                        <span class="work-item-sentence">
+                                        <span className="work-item-sentence">
                                             | COMING SOON |
                                         </span>
                                     </a>
@@ -163,18 +165,18 @@ const WorkPage = () => {
                     </div>
                 </div>
 
-                <div class="modal-sample">
-                    <div id="animatedModal1" class="all_modal">
-                        <a class="close-animatedModal1 close-modal" href="./works.html">
+                <div className="modal-sample">
+                    <div id="animatedModal1" className="all_modal">
+                        <a className="close-animatedModal1 close-modal" href="./works.html">
                             +
                         </a>
-                        <div class="modal-content">
-                            <div class="modal-box">
-                                <div class="modal-title">
+                        <div className="modal-content">
+                            <div className="modal-box">
+                                <div className="modal-title">
                                     <h2>北関東学院<br></br><a href="https://ojagao.github.io/kitakanto/"
                                             target="_blank">実際のサイトはこちら→</a></h2>
                                 </div>
-                                <div class="modal-info">
+                                <div className="modal-info">
                                     <dl>
                                         <dt>◆作品概要</dt>
                                         <dd>職業訓練校に通い初めて１ヶ月程経った時期に課題で作成した
@@ -249,24 +251,24 @@ const WorkPage = () => {
                                     </dl>
                                 </div>
                             </div>
-                            <div class="modal-img">
+                            <div className="modal-img">
                                 <img loading="lazy"
                                     src="./images/screencapture-ojagao-github-io-kitakanto-2022-11-05-15_18_28.png"
                                     alt=""></img>
                             </div>
                         </div>
                     </div>
-                    <div id="animatedModal2" class="all_modal">
-                        <a class="close-animatedModal2 close-modal" href="./works.html">
+                    <div id="animatedModal2" className="all_modal">
+                        <a className="close-animatedModal2 close-modal" href="./works.html">
                             +
                         </a>
-                        <div class="modal-content">
-                            <div class="modal-box">
-                                <div class="modal-title">
+                        <div className="modal-content">
+                            <div className="modal-box">
+                                <div className="modal-title">
                                     <h2>猫カフェ～ごろごろ～<br></br><a href="https://ojagao.github.io/catcafe/"
                                             target="_blank">実際のサイトはこちら→</a></h2>
                                 </div>
-                                <div class="modal-info">
+                                <div className="modal-info">
                                     <dl>
                                         <dt>◆作品概要</dt>
                                         <dd>職業訓練校に通い初めて１ヶ月半程経った時期に自主的に作成した
@@ -333,25 +335,25 @@ const WorkPage = () => {
                                     </dl>
                                 </div>
                             </div>
-                            <div class="modal-img">
+                            <div className="modal-img">
                                 <img loading="lazy"
                                     src="./images/screencapture-ojagao-github-io-catcafe-survice-html-2022-11-07-10_57_38.png"
                                     alt=""></img>
                             </div>
                         </div>
                     </div>
-                    <div id="animatedModal3" class="all_modal">
-                        <a class="close-animatedModal3 close-modal" href="./works.html">
+                    <div id="animatedModal3" className="all_modal">
+                        <a className="close-animatedModal3 close-modal" href="./works.html">
                             +
                         </a>
-                        <div class="modal-content">
-                            <div class="modal-box">
-                                <div class="modal-title">
+                        <div className="modal-content">
+                            <div className="modal-box">
+                                <div className="modal-title">
                                     <h2>株式会社 Diz<br></br><a href="https://ojagao.github.io/Diz/"
                                             target="_blank">実際のサイトはこちら→</a>
                                     </h2>
                                 </div>
-                                <div class="modal-info">
+                                <div className="modal-info">
                                     <dl>
                                         <dt>◆作品概要</dt>
                                         <dd>職業訓練校に通い初めて2ヶ月程経った時期に自主的に作成した
@@ -414,24 +416,24 @@ const WorkPage = () => {
                                     </dl>
                                 </div>
                             </div>
-                            <div class="modal-img">
+                            <div className="modal-img">
                                 <img loading="lazy"
                                     src="./images/screencapture-ojagao-github-io-Diz-2022-11-07-15_30_23.png" alt=""></img>
                             </div>
                         </div>
                     </div>
-                    <div id="animatedModal4" class="all_modal">
-                        <a class="close-animatedModal4 close-modal" href="./works.html">
+                    <div id="animatedModal4" className="all_modal">
+                        <a className="close-animatedModal4 close-modal" href="./works.html">
                             +
                         </a>
-                        <div class="modal-content">
-                            <div class="modal-box">
-                                <div class="modal-title">
+                        <div className="modal-content">
+                            <div className="modal-box">
+                                <div className="modal-title">
                                     <h2>Hunter.<br></br><a href="https://ojagao.github.io/Hunter/"
                                             target="_blank">実際のサイトはこちら→</a>
                                     </h2>
                                 </div>
-                                <div class="modal-info">
+                                <div className="modal-info">
                                     <dl>
                                         <dt>◆作品概要</dt>
                                         <dd>職業訓練校に通い初めて2ヶ月経った時期に作成した
@@ -500,23 +502,23 @@ const WorkPage = () => {
                                     </dl>
                                 </div>
                             </div>
-                            <div class="modal-img">
+                            <div className="modal-img">
                                 <img loading="lazy" src="./images/screenshot-beautysalon.jpeg" alt=""></img>
                             </div>
                         </div>
                     </div>
-                    <div id="animatedModal5" class="all_modal">
-                        <a class="close-animatedModal5 close-modal" href="./works.html">
+                    <div id="animatedModal5" className="all_modal">
+                        <a className="close-animatedModal5 close-modal" href="./works.html">
                             +
                         </a>
-                        <div class="modal-content">
-                            <div class="modal-box">
-                                <div class="modal-title">
+                        <div className="modal-content">
+                            <div className="modal-box">
+                                <div className="modal-title">
                                     <h2>Todo List<br></br><a href="https://ojagao.github.io/TodoReact/"
                                             target="_blank">実際のサイトはこちら→</a>
                                     </h2>
                                 </div>
-                                <div class="modal-info">
+                                <div className="modal-info">
                                     <dl>
                                         <dt>◆作品概要</dt>
                                         <dd>職業訓練校に通い初めて2ヶ月半通った時期に作成した
@@ -559,23 +561,23 @@ const WorkPage = () => {
                                     </dl>
                                 </div>
                             </div>
-                            <div class="modal-img">
+                            <div className="modal-img">
                                 <img loading="lazy" src="./images/sp-todo.png" alt=""></img>
                             </div>
                         </div>
                     </div>
-                    <div id="animatedModal6" class="all_modal">
-                        <a class="close-animatedModal6 close-modal" href="./works.html">
+                    <div id="animatedModal6" className="all_modal">
+                        <a className="close-animatedModal6 close-modal" href="./works.html">
                             +
                         </a>
-                        <div class="modal-content">
-                            <div class="modal-box">
-                                <div class="modal-title">
+                        <div className="modal-content">
+                            <div className="modal-box">
+                                <div className="modal-title">
                                     <h2>NORTH C EAST<br></br><a href="https://ojagao.github.io/kitasalon/"
                                             target="_blank">実際のサイトはこちら→</a>
                                     </h2>
                                 </div>
-                                <div class="modal-info">
+                                <div className="modal-info">
                                     <dl>
                                         <dt>◆作品概要</dt>
                                         <dd>職業訓練校に通い初めて3ヶ月通った時期に他クラスの要望により作成した
@@ -610,25 +612,25 @@ const WorkPage = () => {
                                     </dl>
                                 </div>
                             </div>
-                            <div class="modal-img">
+                            <div className="modal-img">
                                 <img loading="lazy"
                                     src="./images/screencapture-ojagao-github-io-kitasalon-2022-12-07-11_39_35.png"
                                     alt=""></img>
                             </div>
                         </div>
                     </div>
-                    <div id="animatedModal7" class="all_modal">
-                        <a class="close-animatedModal7 close-modal" href="./works.html">
+                    <div id="animatedModal7" className="all_modal">
+                        <a className="close-animatedModal7 close-modal" href="./works.html">
                             +
                         </a>
-                        <div class="modal-content">
-                            <div class="modal-box">
-                                <div class="modal-title">
+                        <div className="modal-content">
+                            <div className="modal-box">
+                                <div className="modal-title">
                                     <h2>北関堂<br></br><a href="https://ojagao.github.io/wagashi/"
                                             target="_blank">実際のサイトはこちら→</a>
                                     </h2>
                                 </div>
-                                <div class="modal-info">
+                                <div className="modal-info">
                                     <dl>
                                         <dt>◆作品概要</dt>
                                         <dd>職業訓練校に通い初めて3ヶ月通った時期に他クラスの要望により作成した
@@ -663,23 +665,23 @@ const WorkPage = () => {
                                     </dl>
                                 </div>
                             </div>
-                            <div class="modal-img">
+                            <div className="modal-img">
                                 <img loading="lazy" src="./images/sc_kitakanndo.png" alt=""></img>
                             </div>
                         </div>
                     </div>
-                    <div id="animatedModal8" class="all_modal">
-                        <a class="close-animatedModal8 close-modal" href="./works.html">
+                    <div id="animatedModal8" className="all_modal">
+                        <a className="close-animatedModal8 close-modal" href="./works.html">
                             +
                         </a>
-                        <div class="modal-content">
-                            <div class="modal-box">
-                                <div class="modal-title">
+                        <div className="modal-content">
+                            <div className="modal-box">
+                                <div className="modal-title">
                                     <h2>北関神社<br></br><a href="https://ojagao.github.io/shrine/"
                                             target="_blank">実際のサイトはこちら→</a>
                                     </h2>
                                 </div>
-                                <div class="modal-info">
+                                <div className="modal-info">
                                     <dl>
                                         <dt>◆作品概要</dt>
                                         <dd>職業訓練校に通い初めて3ヶ月通った時期に他クラスの要望により作成した
@@ -716,24 +718,24 @@ const WorkPage = () => {
                                     </dl>
                                 </div>
                             </div>
-                            <div class="modal-img">
+                            <div className="modal-img">
                                 <img loading="lazy"
                                     src="./images/screencapture-ojagao-github-io-shrine-2022-12-07-11_40_08.png" alt=""></img>
                             </div>
                         </div>
                     </div>
-                    <div id="animatedModal9" class="all_modal">
-                        <a class="close-animatedModal9 close-modal" href="./works.html">
+                    <div id="animatedModal9" className="all_modal">
+                        <a className="close-animatedModal9 close-modal" href="./works.html">
                             +
                         </a>
-                        <div class="modal-content">
-                            <div class="modal-box">
-                                <div class="modal-title">
+                        <div className="modal-content">
+                            <div className="modal-box">
+                                <div className="modal-title">
                                     <h2>north C east<br></br><a href="https://ojagao.github.io/kitasalon2/"
                                             target="_blank">実際のサイトはこちら→</a>
                                     </h2>
                                 </div>
-                                <div class="modal-info">
+                                <div className="modal-info">
                                     <dl>
                                         <dt>◆作品概要</dt>
                                         <dd>職業訓練校に通い初めて3ヶ月通った時期に他クラスの要望により作成した
@@ -769,24 +771,24 @@ const WorkPage = () => {
                                     </dl>
                                 </div>
                             </div>
-                            <div class="modal-img">
+                            <div className="modal-img">
                                 <img loading="lazy"
                                     src="./images/screencapture-ojagao-github-io-kitasalon2-2022-12-07-11_38_31.png"
                                     alt=""></img>
                             </div>
                         </div>
                     </div>
-                    <div id="animatedModal10" class="all_modal">
-                        <a class="close-animatedModal10 close-modal" href="./works.html">
+                    <div id="animatedModal10" className="all_modal">
+                        <a className="close-animatedModal10 close-modal" href="./works.html">
                             +
                         </a>
-                        <div class="modal-content">
-                            <div class="modal-box">
-                                <div class="modal-title">
+                        <div className="modal-content">
+                            <div className="modal-box">
+                                <div className="modal-title">
                                     <h2>Weather Sapporo<br></br><a href="https://ojagao.github.io/weather/"
                                             target="_blank">実際のサイトはこちら→</a></h2>
                                 </div>
-                                <div class="modal-info">
+                                <div className="modal-info">
                                     <dl>
                                         <dt>◆作品概要</dt>
                                         <dd>職業訓練校に通い初めて3ヶ月半程経った時期に自主的に作成した
@@ -849,22 +851,22 @@ const WorkPage = () => {
                                     </dl>
                                 </div>
                             </div>
-                            <div class="modal-img">
+                            <div className="modal-img">
                                 <img loading="lazy" src="./images/weather-sp.png" alt=""></img>
                             </div>
                         </div>
                     </div>
-                    <div id="animatedModal11" class="all_modal">
-                        <a class="close-animatedModal11 close-modal" href="./works.html">
+                    <div id="animatedModal11" className="all_modal">
+                        <a className="close-animatedModal11 close-modal" href="./works.html">
                             +
                         </a>
-                        <div class="modal-content">
-                            <div class="modal-box">
-                                <div class="modal-title">
+                        <div className="modal-content">
+                            <div className="modal-box">
+                                <div className="modal-title">
                                     <h2>Wordpress化した株式会社 Diz<br></br><a href="http://program21.wp.xdomain.jp/"
                                             target="_blank">実際のサイトはこちら→</a></h2>
                                 </div>
-                                <div class="modal-info">
+                                <div className="modal-info">
                                     <dl>
                                         <dt>◆作品概要</dt>
                                         <dd>職業訓練校に通い初めて3ヶ月程経った時期にWordpress化した
@@ -906,23 +908,23 @@ const WorkPage = () => {
                                     </dl>
                                 </div>
                             </div>
-                            <div class="modal-img">
+                            <div className="modal-img">
                                 <img loading="lazy"
                                     src="./images/screencapture-ojagao-github-io-Diz-2022-11-07-15_30_23.png" alt=""></img>
                             </div>
                         </div>
                     </div>
-                    <div id="animatedModal12" class="all_modal">
-                        <a class="close-animatedModal12 close-modal" href="./works.html">
+                    <div id="animatedModal12" className="all_modal">
+                        <a className="close-animatedModal12 close-modal" href="./works.html">
                             +
                         </a>
-                        <div class="modal-content">
-                            <div class="modal-box">
-                                <div class="modal-title">
+                        <div className="modal-content">
+                            <div className="modal-box">
+                                <div className="modal-title">
                                     <h2>Vanilla Todoリスト<br></br><a href="https://ojagao.github.io/vanillaTodo/"
                                             target="_blank">実際のサイトはこちら→</a></h2>
                                 </div>
-                                <div class="modal-info">
+                                <div className="modal-info">
                                     <dl>
                                         <dt>◆作品概要</dt>
                                         <dd>職業訓練校に通い初めて4ヶ月程経った時期に作成した
@@ -968,22 +970,22 @@ const WorkPage = () => {
                                     </dl>
                                 </div>
                             </div>
-                            <div class="modal-img">
+                            <div className="modal-img">
                                 <img loading="lazy" src="./images/sp-vanillaTodo.png" alt=""></img>
                             </div>
                         </div>
                     </div>
-                    <div id="animatedModal13" class="all_modal">
-                        <a class="close-animatedModal13 close-modal" href="./works.html">
+                    <div id="animatedModal13" className="all_modal">
+                        <a className="close-animatedModal13 close-modal" href="./works.html">
                             +
                         </a>
-                        <div class="modal-content">
-                            <div class="modal-box">
-                                <div class="modal-title">
+                        <div className="modal-content">
+                            <div className="modal-box">
+                                <div className="modal-title">
                                     <h2>chat BOT<br></br><a href="https://ojagao.github.io/chatbot/"
                                             target="_blank">実際のサイトはこちら→</a></h2>
                                 </div>
-                                <div class="modal-info">
+                                <div className="modal-info">
                                     <dl>
                                         <dt>◆作品概要</dt>
                                         <dd>職業訓練校に通い初めて4ヶ月程経った時期に作成した
@@ -1026,7 +1028,7 @@ const WorkPage = () => {
                                     </dl>
                                 </div>
                             </div>
-                            <div class="modal-img">
+                            <div className="modal-img">
                                 <img loading="lazy"
                                     src="./images/screencapture-ojagao-github-io-chatbot-2023-01-12-15_05_35.png"
                                     alt=""></img>

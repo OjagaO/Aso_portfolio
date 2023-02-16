@@ -1,10 +1,12 @@
 import React from 'react'
+import BlackSlide from '../utils/blackSlide';
 import Header from './Header';
 
 const ContactPage = () => {
     return (
-        <div className='box'>
+        <div id='c_body' className='box'>
             <Header />
+            <BlackSlide></BlackSlide>
             <main>
                 <div className="main-box">
                     <div className="ct-inner">
