@@ -1,4 +1,5 @@
 {
+  "homepage": "https://github.com/OjagaO/React_portfolio.git",
   "name": "react_portfolio",
   "version": "0.1.0",
   "private": true,
@@ -13,15 +14,15 @@
     "react-scripts": "5.0.1",
     "react-tabs": "^6.0.0",
     "three": "^0.149.0",
-    "web-vitals": "^2.1.4",
-    "homepage": "https://github.com/OjagaO/react-portfolio.git"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "cross-env PUBLIC_URL=/react-portfolio react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
