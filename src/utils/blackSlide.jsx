@@ -3,37 +3,45 @@ import '../componets/style.css';
 import { motion } from 'framer-motion';
 
 const BlackSlide = ({ children }) => {
-    const blackSlide = {
-        initial: {
-            height: '100vh',
-            width: 0,
-            left: 100,
-            zIndex: 99999,
-        },
-        animate: {
-            width: [0, 'calc(100% - 100)', 0],
-        }
-    }
+    let winW = window.innerWidth - 100;
+    let winH = window.innerHeight / 2 + 1;
 
+        const blackSlideU = {
+            animate: {
+                width: [winW,winW, winW, winW],
+                height: [winH,winH,0,0],
+            },
+            transition: {
+                times: [0, 0, 0.4,0.9],
+                duration: 1.3,
+            }
+        }
+    
+        const blackSlideL = {
+            animate: {
+                width: [winW,winW, winW, winW],
+                height: [winH,winH,0,0],
+            },
+            transition: {
+                times: [0, 0, 0.4,0.9],
+                duration: 1.3,
+            }
+        }
+    
 
     return (
         <div className='absolute'>
             <motion.div
-                initial={blackSlide.initial}
-                // animate={blackSlide.animate}
-                animate={{
-                    width: [0, 1200, 300, 100, 0],
-                    rotate: [0, 0, 180, 180, 180],
-                    borderRadius: ["0%", "0%", "50%", "0%", "0%"]
-                }}
-                // transition={{ duration: 2, delay: 0.5 }}
-                transition={{
-                    duration: 2,
-                    ease: "easeInOut",
-                    times: [0, 0.2, 0.5, 0.7, 1],
-                }}
-                className='black_slider'>
+                animate={blackSlideU.animate}
+                transition={blackSlideU.transition}
+                className='black_sliderU'>
                 {children}
+            </motion.div>
+            <motion.div
+            animate={blackSlideL.animate}
+            transition={blackSlideL.transition}
+            className='black_sliderL'>
+
             </motion.div>
         </div>
     )

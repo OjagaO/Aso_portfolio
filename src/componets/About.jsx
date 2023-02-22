@@ -1,173 +1,162 @@
 import React from 'react';
 import BlackSlide from '../utils/blackSlide';
 import Header from './Header';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 const AboutPage = () => {
     return (
-            <div id='a_body' className='box'>
-                <Header />
-                <BlackSlide></BlackSlide>
-                <main>
-                    <div className="main-box">
-                        <div className="inner">
-                            <div className="header-title">
-                                <h1>About..</h1>
-                                <p>自己紹介</p>
-                            </div>
-                            <div className="main-content">
-                                <div className="main-left">
-                                    <div className="my-img">
-                                        <img loading="lazy" src="./images/1643869900320.jpg" alt=""></img>
+        <div id='a_body' className='box'>
+            <Header />
+            <BlackSlide></BlackSlide>
+            <main>
+                <div className="main-box">
+                    <div className="inner">
+                        <div className="header-title">
+                            <h1>About..</h1>
+                            <p>自己紹介</p>
+                        </div>
+                        <div className="main-content">
+                            <div className="main-left">
+                                <div className="my-img">
+                                    <img  src="./images/1643869900320.jpg" alt=""></img>
+                                </div>
+                                <div className="myself">
+                                    <div className="my-title">
+                                        <h3>麻生 大翔<br></br><span>Aso Hiroto</span></h3>
                                     </div>
-                                    <div className="myself">
-                                        <div className="my-title">
-                                            <h3>麻生 大翔<br></br><span>Aso Hiroto</span></h3>
-                                        </div>
-                                        <div className="my-info">
-                                            <dl>
-                                                <dt>生年月日</dt>
-                                                <dd>2000/12/06</dd>
-                                            </dl>
-                                            <dl>
-                                                <dt>出生地</dt>
-                                                <dd>北海道北見市</dd>
-                                            </dl>
-                                            <dl>
-                                                <dt>現住所</dt>
-                                                <dd>北海道札幌市</dd>
-                                            </dl>
-                                            <dl>
-                                                <dt>連絡先</dt>
-                                                <dd>ahiroto1234@gmail.com</dd>
-                                            </dl>
-                                        </div>
+                                    <div className="my-info">
+                                        <dl>
+                                            <dt>生年月日</dt>
+                                            <dd>2000/12/06</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>出生地</dt>
+                                            <dd>北海道北見市</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>現住所</dt>
+                                            <dd>北海道札幌市</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>連絡先</dt>
+                                            <dd>ahiroto1234@gmail.com</dd>
+                                        </dl>
                                     </div>
                                 </div>
-                                <div className="main-right">
-                                    <div className="skill">
-                                        <div className="skill-title">
-                                            <h3>スキルセット</h3>
-                                        </div>
-                                        <div className="skill-culm">
-                                            <div className="wrapper">
-                                                <ul className="tab">
-                                                    <li className="target"><a href="#html"><img
-                                                        src="./images/html-icon.png" alt=""></img></a></li>
-                                                    <li className="target"><a href="#css"><img
-                                                        src="./images/css-icon.png" alt=""></img></a></li>
-                                                    <li className="target"><a href="#javascript"><img
-                                                        src="./images/js-icon.png" alt=""></img></a>
-                                                    </li>
-                                                    <li className="target"><a href="#jquery"><img
-                                                        src="./images/jquery-icon.png" alt=""></img></a>
-                                                    </li>
-                                                    <li className="target"><a href="#wordpress"><img
-                                                        src="./images/wordpress-icon.png" alt=""></img></a>
-                                                    </li>
-                                                </ul>
-
-                                                <div id="html" className="area">
-                                                    <h2>
-                                                        ★★★★☆<br></br>
-                                                        W3C標準準拠したコーディングを心がけています
-                                                    </h2>
-                                                    <p>
-                                                        実装したいことを実現するためにW3C標準から
-                                                        外れてしまうこともありますし、
-                                                        jQueryを導入している場合は、
-                                                        その仕様上W3C標準に準拠できない
-                                                        可能性もありますが、できる限り検索エンジンの最適化（SEO）・
-                                                        アクセシビリティの向上・
-                                                        データ軽量化による読み込み時間短縮・
-                                                        メンテナンス性の向上等に努めるべく丁寧なコーディングを
-                                                        心がけております。
-                                                    </p>
-                                                </div>
-                                                <div id="css" className="area">
-                                                    <h2>
-                                                        ★★★★☆<br></br>
-                                                        SCSSの使用経験あり
-                                                    </h2>
-                                                    <p>
-                                                        CSSにおけるコーディングとして
-                                                        カンプを見た瞬間にある構造を把握し、
-                                                        どのように書けばよいのかがある程度浮かんできて
-                                                        それをコーディングするのが得意です。
-                                                        様々なプロパティへの理解も比較的高いです。
-                                                        デザイン崩れの修正なども得意で検証ツールを用いて
-                                                        一人で解決し続けてきました。HTMLの欄ではW3C標準に準拠すると記載しましたが、
-                                                        CSS設計に関しては未就学です。就業先の命名規則に準拠いたします。
-                                                    </p>
-                                                </div>
-                                                <div id="javascript" className="area">
-                                                    <h2>
-                                                        ★★★☆☆<br></br>
-                                                        アプリケーションの制作経験がある
-                                                    </h2>
-                                                    <p>
-                                                        Webサイトを作るうえではあまりバニラのJSというのは
-                                                        触る機会が無かったのですが、将来的にフロントエンドエンジニアとして
-                                                        活躍したいと思ったときに必須な言語となると思ったので訓練校に通っている期間に
-                                                        独学で学びました。DOM操作や配列処理、ローカルストレージ、JSONなど最低限ではありますが
-                                                        自らで１からTodoアプリの制作を行いました。
-                                                    </p>
-                                                </div>
-                                                <div id="jquery" className="area">
-                                                    <h2>
-                                                        ★★★★☆<br></br>
-                                                        複雑なものでなければ一人で１から書くことができます
-                                                    </h2>
-                                                    <p>
-                                                        コピー＆ペーストに甘んじるのではなく
-                                                        しっかりと仕組みを理解し、１から自分で書けるように
-                                                        自ら気を付けながら勉強してきました。
-                                                        １から書けるということはカスタマイズする際の
-                                                        自由度も広がりますし、修正力も桁違いになるかなと考えた結果です。
-                                                        何より思い通りの動きを実装できたほうがやりがいを感じ、
-                                                        その過程や修正がまた楽しいからです。
-                                                        コードを見てその意味を把握する力には自信があります。
-                                                        様々なライブラリの使用経験などもあります。
-                                                    </p>
-                                                </div>
-                                                <div id="wordpress" className="area">
-                                                    <h2>
-                                                        ★★★☆☆<br></br>
-                                                        既存のサイトをWordpress化できます。
-                                                    </h2>
-                                                    <p>
-                                                        簡単なカスタマイズやテンプレートの追加、
-                                                        既存のサイトのWordpress化等の初歩的な
-                                                        知識については持ち合わせおります。
-                                                        カスタム投稿テーマの追加や、テンプレートタグを用いた
-                                                        コード側からのカスタムも多少できます。
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
+                            </div>
+                            <div className="main-right">
+                                <div className="skill">
+                                    <div className="skill-title">
+                                        <h3>スキルセット</h3>
                                     </div>
-                                    <div className="history">
-                                        <div className="history-title">
-                                            <h3>略歴</h3>
+                                    <Tabs className="skill-culm">
+                                        <div className="wrapper">
+                                            <TabList className="tab">
+                                                <Tab><img src="./images/html-icon.png" alt="HTML"></img></Tab>
+                                                <Tab><img src="./images/css-icon.png" alt="CSS"></img></Tab>
+                                                <Tab><img src="./images/js-icon.png" alt="JavaScript"></img></Tab>
+                                                <Tab><img src="./images/react-icon.png" alt=""></img></Tab>
+                                                <Tab><img src="./images/wordpress-icon.png" alt=""></img></Tab>
+                                            </TabList>
+
+                                            <TabPanel id="html" className="area">
+                                                <h2>
+                                                    ★★★★☆<br></br>
+                                                    W3C標準準拠したコーディングを心がけています
+                                                </h2>
+                                                <p>
+                                                    実装したいことを実現するためにW3C標準から
+                                                    外れてしまうこともありますし、
+                                                    jQueryを導入している場合は、
+                                                    その仕様上W3C標準に準拠できない
+                                                    可能性もありますが、できる限り検索エンジンの最適化（SEO）・
+                                                    アクセシビリティの向上・
+                                                    データ軽量化による読み込み時間短縮・
+                                                    メンテナンス性の向上等に努めるべく丁寧なコーディングを
+                                                    心がけております。
+                                                </p>
+                                            </TabPanel>
+                                            <TabPanel id="css" className="area">
+                                                <h2>
+                                                    ★★★★☆<br></br>
+                                                    SCSSの使用経験あり
+                                                </h2>
+                                                <p>
+                                                    CSSにおけるコーディングとして
+                                                    カンプを見た瞬間にある構造を把握し、
+                                                    どのように書けばよいのかがある程度浮かんできて
+                                                    それをコーディングするのが得意です。
+                                                    様々なプロパティへの理解も比較的高いです。
+                                                    デザイン崩れの修正なども得意で検証ツールを用いて
+                                                    一人で解決し続けてきました。HTMLの欄ではW3C標準に準拠すると記載しましたが、
+                                                    CSS設計に関しては未就学です。就業先の命名規則に準拠いたします。
+                                                </p>
+                                            </TabPanel>
+                                            <TabPanel id="javascript" className="area">
+                                                <h2>
+                                                    ★★★☆☆<br></br>
+                                                    アプリケーションの制作経験がある
+                                                </h2>
+                                                <p>
+                                                    Webサイトを作るうえではあまりバニラのJSというのは
+                                                    触る機会が無かったのですが、将来的にフロントエンドエンジニアとして
+                                                    活躍したいと思ったときに必須な言語となると思ったので訓練校に通っている期間に
+                                                    独学で学びました。DOM操作や配列処理、ローカルストレージ、JSONなど最低限ではありますが
+                                                    自らで１からTodoアプリの制作を行いました。
+                                                </p>
+                                            </TabPanel>
+                                            <TabPanel id="React" className="area">
+                                                <h2>
+                                                    ★★☆☆☆<br></br>
+                                                    当ポートフォリオもReactで作成されております
+                                                </h2>
+                                                <p>
+                                                    とっかかりとしてTodoアプリの作成などから行い、
+                                                    HTML,CSS,JQueryで作成された当ポートフォリオサイトを、
+                                                    Reactで書き直して改修いたしました。
+                                                    恐らくHooksなどを使いこなせば様々な機能や
+                                                    記述量を減らせたりなどすると思うのでこれからも学び続けていきたい。
+                                                </p>
+                                            </TabPanel>
+                                            <TabPanel id="wordpress" className="area">
+                                                <h2>
+                                                    ★★★☆☆<br></br>
+                                                    既存のサイトをWordpress化できます。
+                                                </h2>
+                                                <p>
+                                                    簡単なカスタマイズやテンプレートの追加、
+                                                    既存のサイトのWordpress化等の初歩的な
+                                                    知識については持ち合わせおります。
+                                                    カスタム投稿テーマの追加や、テンプレートタグを用いた
+                                                    コード側からのカスタムも多少できます。
+                                                </p>
+                                            </TabPanel>
                                         </div>
-                                        <div className="history-culm">
-                                            <p>
-                                                北見北斗高校卒業後、地元の北海道を飛び出し
-                                                各地をホテルや旅館の仕事をしながら回っていたが
-                                                コロナを機に失業。その際何のスキルもない人間が
-                                                簡単に仕事を失う恐ろしさを知り
-                                                スキルを用いた様々な仕事を
-                                                調べていく中でプログラミングと出会った。
-                                                現在はWEB制作会社に入社するため
-                                                職業訓練校に通い勉強中。
-                                            </p>
-                                        </div>
+                                    </Tabs>
+                                </div>
+                                <div className="history">
+                                    <div className="history-title">
+                                        <h3>略歴</h3>
+                                    </div>
+                                    <div className="history-culm">
+                                        <p>
+                                            北見北斗高校卒業後、地元の北海道を飛び出し
+                                            各地をホテルや旅館の仕事をしながら回っていたが
+                                            コロナを機に失業。その際何のスキルもない人間が
+                                            簡単に仕事を失う恐ろしさを知り
+                                            スキルを用いた様々な仕事を
+                                            調べていく中でプログラミングと出会った。
+                                            現在はWEB制作会社に入社するため
+                                            職業訓練校に通い勉強中。
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </main>
-            </div>
+                </div>
+            </main>
+        </div>
     )
 }
 
