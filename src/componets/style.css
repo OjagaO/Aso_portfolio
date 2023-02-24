@@ -1165,7 +1165,6 @@ a {
 
     .hamburger {
         display: block;
-
     }
 
     .hamburger-btn {
@@ -1179,14 +1178,14 @@ a {
         z-index: 999;
     }
 
-    .btn-area {
+    #btn-area {
         transition: 0.6s;
         width: 50px;
         height: 50px;
         position: relative;
     }
 
-    .btn-area span {
+    #btn-area span {
         display: inline-block;
         transition: all .4s;
         position: absolute;
@@ -1197,41 +1196,41 @@ a {
         width: 45%;
     }
 
-    .btn-area span:nth-of-type(1) {
+    #btn-area span:nth-of-type(1) {
         top: 15px;
     }
 
-    .btn-area span:nth-of-type(2) {
+    #btn-area span:nth-of-type(2) {
         top: 23px;
     }
 
-    .btn-area span:nth-of-type(3) {
+    #btn-area span:nth-of-type(3) {
         top: 31px;
     }
 
-    .btn-area.swich .openbtn-area {
+    #btn-area.swich .openbtn-area {
         transform: rotate(360deg);
     }
 
-    .btn-area.swich span:nth-of-type(1) {
+    #btn-area.swich span:nth-of-type(1) {
         top: 18px;
         left: 18px;
         transform: translateY(6px) rotate(-45deg);
         width: 30%;
     }
 
-    .btn-area.swich span:nth-of-type(2) {
+    #btn-area.swich span:nth-of-type(2) {
         opacity: 0;
     }
 
-    .btn-area.swich span:nth-of-type(3) {
+    #btn-area.swich span:nth-of-type(3) {
         top: 30px;
         left: 18px;
         transform: translateY(-6px) rotate(45deg);
         width: 30%;
     }
 
-    .open-hd {
+    #open-hd {
         height: 100vh;
         height: calc(var(--vh, 1vh) * 100);
         width: 100%;
@@ -1241,7 +1240,7 @@ a {
         transition: 0.5s;
     }
 
-    .open-hd.swich {
+    #open-hd.swich {
         bottom: 0;
     }
 
@@ -1367,72 +1366,6 @@ a {
     }
 
     /* work */
-    .btn-area {
-        transition: 0.6s;
-        width: 50px;
-        height: 50px;
-        position: relative;
-    }
-
-    .btn-area span {
-        display: inline-block;
-        transition: all .4s;
-        position: absolute;
-        left: 14px;
-        height: 3px;
-        border-radius: 2px;
-        background: #fff;
-        width: 45%;
-    }
-
-    .btn-area span:nth-of-type(1) {
-        top: 15px;
-    }
-
-    .btn-area span:nth-of-type(2) {
-        top: 23px;
-    }
-
-    .btn-area span:nth-of-type(3) {
-        top: 31px;
-    }
-
-    .btn-area.swich .openbtn-area {
-        transform: rotate(360deg);
-    }
-
-    .btn-area.swich span:nth-of-type(1) {
-        top: 18px;
-        left: 18px;
-        transform: translateY(6px) rotate(-45deg);
-        width: 30%;
-    }
-
-    .btn-area.swich span:nth-of-type(2) {
-        opacity: 0;
-    }
-
-    .btn-area.swich span:nth-of-type(3) {
-        top: 30px;
-        left: 18px;
-        transform: translateY(-6px) rotate(45deg);
-        width: 30%;
-    }
-
-    .open-hd {
-        height: 100vh;
-        height: calc(var(--vh, 1vh) * 100);
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
-        position: fixed;
-        bottom: 120%;
-        transition: 0.5s;
-    }
-
-    .open-hd.swich {
-        bottom: 0;
-    }
-
     .work-item {
         width: 78vw;
         height: 39vw;
@@ -1471,72 +1404,6 @@ a {
     /* contact */
     #stalker {
         display: none;
-    }
-
-    .btn-area {
-        transition: 0.6s;
-        width: 50px;
-        height: 50px;
-        position: relative;
-    }
-
-    .btn-area span {
-        display: inline-block;
-        transition: all .4s;
-        position: absolute;
-        left: 14px;
-        height: 3px;
-        border-radius: 2px;
-        background: #fff;
-        width: 45%;
-    }
-
-    .btn-area span:nth-of-type(1) {
-        top: 15px;
-    }
-
-    .btn-area span:nth-of-type(2) {
-        top: 23px;
-    }
-
-    .btn-area span:nth-of-type(3) {
-        top: 31px;
-    }
-
-    .btn-area.swich .openbtn-area {
-        transform: rotate(360deg);
-    }
-
-    .btn-area.swich span:nth-of-type(1) {
-        top: 18px;
-        left: 18px;
-        transform: translateY(6px) rotate(-45deg);
-        width: 30%;
-    }
-
-    .btn-area.swich span:nth-of-type(2) {
-        opacity: 0;
-    }
-
-    .btn-area.swich span:nth-of-type(3) {
-        top: 30px;
-        left: 18px;
-        transform: translateY(-6px) rotate(45deg);
-        width: 30%;
-    }
-
-    .open-hd {
-        height: 100vh;
-        height: calc(var(--vh, 1vh) * 100);
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
-        position: fixed;
-        bottom: 120%;
-        transition: 0.5s;
-    }
-
-    .open-hd.swich {
-        bottom: 0;
     }
 
     .ct-form {

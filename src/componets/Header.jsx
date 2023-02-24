@@ -7,6 +7,14 @@ import pcIcon from './logo/image.notepc.png';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
+
+    const openBtn = document.getElementById("btn-area");
+    const spHeader = document.getElementById("open-hd");
+    openBtn.addEventListener("click",function(){
+        openBtn.classList.add("swich");
+        spHeader.classList.add("swich");
+    })
+
     return (
         <div className="side-header">
                 <nav className="side-bar">
@@ -27,11 +35,11 @@ const Header = () => {
                         </Link>
                         <div className="hamburger">
                             <div className="hamburger-btn">
-                                <div className="btn-area">
+                                <div id="btn-area">
                                     <span></span><span></span><span></span>
                                 </div>
                             </div>
-                            <div className="open-hd">
+                            <div id="open-hd">
                                 <Link className="open-item target to_a" to="/React_portfolio/about"><img className="mono-logo"
                                         src={manIcon} alt="logo"></img>
                                     <p className="">About</p>
