@@ -980,6 +980,14 @@ a {
 }
 
 @media screen and (max-width : 1024px) {
+    canvas {
+        display: none;
+    }
+
+    .main-logo-box {
+        left: 50%;
+    }
+
     .inner {
         width: 90%;
     }
@@ -1092,6 +1100,9 @@ a {
     }
 
     /* contact */
+    .ct-inner {
+        width: 90%;
+    }
 
     .ct-form {
         padding: 8px;
@@ -1232,10 +1243,10 @@ a {
 
     #open-hd {
         height: 100vh;
-        height: calc(var(--vh, 1vh) * 100);
+        /* height: calc(var(--vh, 1vh) * 100); */
         width: 100%;
         background-color: rgba(0, 0, 0, 0.9);
-        position: absolute;
+        position: fixed;
         bottom: 120%;
         transition: 0.5s;
     }
