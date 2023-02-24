@@ -9,14 +9,14 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 function App() {
 
   const location = useLocation();
-  const ghPagesUrl ="https://ojagao.github.io/React_portfolio";
+  const ghPagesUrl ="/React_portfolio";
 
   return (
     <div className="app">
         <AnimatePresence>
           <Routes location={location} key={location.pathname}>
-            <Route path={ ghPagesUrl } element={<Index />} />
-            <Route path={ ghPagesUrl + "/about" } element={<AboutPage />} />
+            <Route path={ ghPagesUrl + '/'} element={<Index />} />
+            <Route path={ ghPagesUrl + '/about' } element={<AboutPage />} />
             <Route path={ ghPagesUrl + '/work' } element={<WorkPage />} />
             <Route path={ ghPagesUrl + '/contact' } element={<ContactPage />} />
             <Route path="*" element={<Index />} />

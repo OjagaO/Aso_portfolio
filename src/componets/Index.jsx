@@ -89,7 +89,7 @@ const Index = () => {
                             </p>
                             <nav className="header-navigation">
                                 <ul className="header-list">
-                                    <li className="header-list-parts"><Link className="to_a target" to="/about"><span>Hover
+                                    <li className="header-list-parts"><Link className="to_a target" to="/React_portfolio/about"><span>Hover
                                         Here</span><span>About
                                             Me</span></Link></li>
                                 </ul>
