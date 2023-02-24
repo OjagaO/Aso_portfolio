@@ -83,7 +83,6 @@ const Index = () => {
                 <canvas id='canvas'></canvas>
                 <div id="video">
                     <div className="header-main">
-                        {/* <video src={backV} className="back-v" muted autoplay loop playsinline></video> */}
                         <div className="main-logo-box">
                             <p className="main-logo">
                                 <img src={icon} alt=""></img>
