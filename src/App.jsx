@@ -9,7 +9,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 function App() {
 
   const location = useLocation();
-  const ghPagesUrl ="/React_portfolio";
+  const ghPagesUrl ="/aso-portfolio";
 
   return (
     <div className="app">
