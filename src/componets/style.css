@@ -13,10 +13,10 @@ canvas {
     width: 100%;
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
-    background: linear-gradient(135deg, rgba(55, 103, 51, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(135deg, rgb(10, 10, 10) 0%, rgb(71, 67, 67) 100%);
 }
 
-.black_sliderU{
+.black_sliderU {
     position: fixed;
     bottom: 50%;
     left: 100px;
@@ -36,6 +36,14 @@ canvas {
 
 .absolute {
     position: absolute;
+}
+
+.partsPC {
+    display: block;
+}
+
+.partsSP {
+    display: none;
 }
 
 #a_body {
@@ -68,7 +76,7 @@ canvas {
 #a_body::before,
 #w_body::before,
 #c_body::before {
-    content: '';
+    content: "";
     background-color: rgba(0, 0, 0, 0.75);
     position: fixed;
     top: 0;
@@ -137,7 +145,7 @@ canvas {
     width: 100%;
     border-radius: 10px;
     /* padding: 10px 20px; */
-    font-family: 'Ms Madi', cursive;
+    font-family: "Ms Madi", cursive;
     transition: all 0.5s;
     background-color: linear-gradient(70deg, rgb(255, 255, 255), black);
     margin-bottom: 20px;
@@ -160,7 +168,7 @@ canvas {
     position: absolute;
     left: 50%;
     top: 0;
-    transition: all .5s;
+    transition: all 0.5s;
     transform: translate(-50%, 50%);
     display: block;
     opacity: 1;
@@ -257,7 +265,7 @@ canvas {
 }
 
 .header-list-item__title {
-    font-family: 'Ms Madi', cursive;
+    font-family: "Ms Madi", cursive;
     color: white;
     margin-top: 4px;
 }
@@ -271,7 +279,7 @@ canvas {
 }
 
 .title {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
     padding: 32px 0 16px;
     letter-spacing: 0.2em;
 }
@@ -294,7 +302,7 @@ canvas {
     line-height: 1.5em;
     font-size: 1.5rem;
     letter-spacing: 0.1em;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
 }
 
 .work-box {
@@ -363,7 +371,7 @@ canvas {
     opacity: 1;
 }
 
-.work-item img:hover~.work-item-sentence {
+.work-item img:hover ~ .work-item-sentence {
     opacity: 1;
     transition: 1s;
 }
@@ -419,7 +427,7 @@ canvas {
     transform: scale(1);
 }
 
-#animatedModal1.active main{
+#animatedModal1.active main {
     overflow: hidden;
 }
 
@@ -475,7 +483,7 @@ canvas {
 
 .modal-info dl {
     margin: 12px 0;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
 }
 
 .modal-info dt {
@@ -521,7 +529,7 @@ canvas {
     box-sizing: border-box;
     padding: 30px;
     background-color: #00000066;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
 }
 
 input,
@@ -548,7 +556,6 @@ textarea {
 .ct-title span {
     color: rgb(255, 181, 21);
 }
-
 
 .ct-form-item {
     display: flex;
@@ -619,7 +626,6 @@ textarea {
     padding: 16px;
     padding-left: 4px;
 }
-
 
 .number-form input {
     width: 20%;
@@ -754,7 +760,7 @@ main {
 }
 
 .side-bar::before {
-    content: '';
+    content: "";
     background-color: rgb(0, 0, 0);
     position: absolute;
     top: 0;
@@ -833,13 +839,13 @@ main {
     position: absolute;
     bottom: 15px;
     right: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-weight: 100;
     font-size: 2em;
 }
 
 .header-title h1 {
-    font-family: 'Ms Madi', cursive;
+    font-family: "Ms Madi", cursive;
     font-size: 5rem;
     margin: 0.3em 0 0.1em;
 }
@@ -888,7 +894,7 @@ main {
 .my-info dl {
     display: flex;
     margin: 30px 0;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
 }
 
 .my-info dt {
@@ -958,7 +964,7 @@ a {
     padding: 0 10px;
     letter-spacing: 0.05rem;
     line-height: 1.5rem;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
 }
 
 .skill-title,
@@ -976,16 +982,26 @@ a {
     font-size: 1.1rem;
     letter-spacing: 0.1rem;
     line-height: 1.5rem;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
 }
 
-@media screen and (max-width : 1024px) {
-    canvas {
+@media screen and (max-width: 1024px) {
+    .partsPC {
         display: none;
     }
 
+    .partsSP {
+        display: block;
+    }
+
     .main-logo-box {
+        top: 55%;
         left: 50%;
+    }
+
+    .header-list-parts a {
+        padding: 0;
+        overflow: visible;
     }
 
     .inner {
@@ -1125,14 +1141,29 @@ a {
     }
 }
 
-@media screen and (max-width : 600px) {
+@media screen and (max-width: 600px) {
+    .main-logo-box {
+        position: static;
+        transform: none;
+    }
+    .main-logo {
+        position: fixed;
+        width: 20vw;
+        top: 10vw;
+    }
+
     .main-logo img {
-        width: auto;
-        height: 50%;
+        width: 80%;
+        height: auto;
+    }
+
+    .header-navigation {
+        position: fixed;
+        bottom: 9vw;
     }
 
     .black_sliderU,
-    .black_sliderL{
+    .black_sliderL {
         left: 0;
     }
 
@@ -1198,7 +1229,7 @@ a {
 
     #btn-area span {
         display: inline-block;
-        transition: all .4s;
+        transition: all 0.4s;
         position: absolute;
         left: 14px;
         height: 3px;
@@ -1429,11 +1460,11 @@ a {
 
     .ct-upper {
         width: auto;
-        font-family: 'Noto Sans JP', sans-serif;
+        font-family: "Noto Sans JP", sans-serif;
     }
 
     .ct-upper p {
-        font-family: 'Noto Sans JP', sans-serif;
+        font-family: "Noto Sans JP", sans-serif;
     }
 
     .name-form dd input {
@@ -1443,7 +1474,7 @@ a {
     .ct-form-item dd {
         width: 100%;
         flex-wrap: wrap;
-        font-family: 'Noto Sans JP', sans-serif;
+        font-family: "Noto Sans JP", sans-serif;
     }
 
     .ct-form-item dd label {
